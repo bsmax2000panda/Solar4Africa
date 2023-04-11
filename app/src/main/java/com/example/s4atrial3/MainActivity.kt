@@ -19,8 +19,9 @@ class MainActivity : AppCompatActivity() {
         beginjourney.setOnClickListener {
             var name : String = findViewById<EditText>(R.id.Nametextinput).text.toString()
             var vehicleID : String = findViewById<EditText>(R.id.VehicleIDtextinput).text.toString()
+            var GPSCoordinates : String = findViewById<EditText>(R.id.GPSCoordinates).text.toString()
 
-            var output = "$name  $vehicleID"
+            var output = "$name  $vehicleID $GPSCoordinates"
             Toast.makeText(this@MainActivity, output, LENGTH_LONG).show()
         }
 

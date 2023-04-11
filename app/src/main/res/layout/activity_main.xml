@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,21 +14,12 @@
         android:fontFamily="sans-serif"
         android:text="Solar4Africa"
         android:textSize="48sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
-
-    <Button
-        android:id="@+id/beginjourneybutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Begin Journey"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
 
     <EditText
         android:id="@+id/Nametextinput"
@@ -35,22 +27,40 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/VehicleIDtextinput"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Name"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
         android:id="@+id/VehicleIDtextinput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="61dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Vehicle ID "
-        app:layout_constraintBottom_toTopOf="@+id/beginjourneybutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:hint="Vehicle ID"
+        app:layout_constraintTop_toBottomOf="@+id/Nametextinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/GPSCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="00.0000, 00.0000"
+        app:layout_constraintTop_toBottomOf="@+id/VehicleIDtextinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/beginjourneybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Journey"
+        app:layout_constraintTop_toBottomOf="@+id/GPSCoordinates"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

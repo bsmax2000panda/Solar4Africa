@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "850800461731",
+    "project_id": "solar4africa-b2037",
+    "storage_bucket": "solar4africa-b2037.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850800461731:android:21760ee0dd193115bfbc16",
+        "android_client_info": {
+          "package_name": "com.example.s4atrial3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850800461731-9rarnqf7fgg0g9c1ujbsh2qbtpvpptvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK3dF5W9-UHai8iL1DUb3FDLB3TAF2Bu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850800461731-9rarnqf7fgg0g9c1ujbsh2qbtpvpptvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
